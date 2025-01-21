@@ -11,7 +11,7 @@ train = '/kaggle/input/newinductiondataset/Data/Train'
 test = '/kaggle/input/induction-task-2025/Test_Images'
 
 # Preprocessing the data
-datagen = ImageDataGenerator(rescale=1./255)  # Removed validation_split
+datagen = ImageDataGenerator(rescale=1./255)  
 
 train_generator = datagen.flow_from_directory(
     train,
